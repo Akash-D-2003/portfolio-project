@@ -2,7 +2,7 @@ import React from "react";
 import menImage from "../../src/images/men-image.png";
 import ringImage from "../../src/images/image-ring.png";
 import dIcon from "../../src/images/dwonload-icon.png";
-import cv from "../../public/fonts/Akash-d-resume.pdf";
+import resume from "../../public/fonts/Akash-d-resume.pdf";
 
 function Home() {
   return (
@@ -20,7 +20,7 @@ function Home() {
             </p>
           </div>
           <div className="col-lg-6 men-img">
-            <a href={cv} download className="cv-box">
+            <a href={resume} download className="cv-box">
               <div className="dwonload-box">
                 <div className="img">
                   <img src={dIcon} alt="icon" />
