@@ -1,0 +1,54 @@
+@import "./sass/font";
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+}
+.darktheme {
+  color: black;
+  background-color: #ffffff88;
+}
+body {
+  overflow-x: hidden;
+  color: #ffff;
+  background-color: black;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  font-family: "poppins-medium";
+  font-weight: 500;
+}
+.mb-10 {
+  margin-bottom: 100px;
+}
+.btn-header {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 18px 40px;
+  border-radius: 50px;
+  border: none;
+  background-color: #9d64cf7e;
+  color: #ffff;
+}
+@import "./sass/header";
+@import "./sass/home";
+@import "./sass/skill";
+@import "./sass/project";
+@import "./sass/contact";
+@import "./sass/responcive";

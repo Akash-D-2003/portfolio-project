@@ -1,0 +1,171 @@
+.skill-section {
+  padding-block: 100px;
+
+  position: relative;
+
+  &::before {
+    content: "";
+    background-image: url("../../src/images/bing-sad.png");
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  &::after {
+    content: "";
+    background-image: url("../../src/images/shadow2.png");
+    width: 500px;
+    height: 800px;
+    background-repeat: no-repeat;
+    filter: hue-rotate(300deg);
+    position: absolute;
+    top: -200px;
+    right: 0;
+    z-index: -1;
+  }
+  h2 {
+    font-family: "prosto";
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 700;
+    img {
+      width: 180px;
+      margin-left: 20px;
+    }
+  }
+  .skill-box {
+    position: relative;
+    z-index: 1;
+    .icon {
+      padding-left: 10px;
+      font-size: 30px;
+    }
+    .info {
+      margin-block: 10px;
+      span {
+        font-family: "poppins-medium";
+        font-size: 18px;
+        font-weight: 500;
+      }
+    }
+    @keyframes skillLine {
+      100% {
+        transform: scaleX(1);
+      }
+    }
+    .skill-line {
+      width: 100%;
+      height: 5px;
+      background-color: #9999995d;
+      border-radius: 10px;
+      position: relative;
+      span {
+        position: absolute;
+        height: 5px;
+        border-radius: 10px;
+        transform: scaleX(0);
+        transform-origin: left;
+      }
+      .line {
+        animation: skillLine 2s linear forwards;
+      }
+      .hide-line {
+        transform: scaleX(0);
+      }
+    }
+    .html {
+      span {
+        width: 90%;
+        background-color: #c95d2e;
+        &::after {
+          content: "90%";
+          position: absolute;
+          right: 2px;
+          top: -25px;
+          opacity: 1;
+        }
+      }
+    }
+    .css {
+      span {
+        width: 90%;
+        background-color: #147bbc;
+        &::after {
+          content: "90%";
+          position: absolute;
+          right: 2px;
+          top: -25px;
+          opacity: 1;
+        }
+      }
+    }
+    .js {
+      span {
+        width: 70%;
+        background-color: #f0db4f;
+        &::after {
+          content: "70%";
+          position: absolute;
+          right: 2px;
+          top: -25px;
+          opacity: 1;
+        }
+      }
+    }
+    .sass {
+      span {
+        width: 86%;
+        background-color: #cc6699;
+        &::after {
+          content: "86%";
+          position: absolute;
+          right: 2px;
+          top: -25px;
+          opacity: 1;
+        }
+      }
+    }
+    .boot {
+      span {
+        width: 88%;
+        background-color: #563d7c;
+        &::after {
+          content: "88%";
+          position: absolute;
+          right: 2px;
+          top: -25px;
+          opacity: 1;
+        }
+      }
+    }
+    .jq {
+      span {
+        width: 70%;
+        background-color: #0769ad;
+        &::after {
+          content: "70%";
+          position: absolute;
+          right: 2px;
+          top: -25px;
+          opacity: 1;
+        }
+      }
+    }
+    .react {
+      span {
+        width: 69%;
+        background-color: #61dbfb;
+        &::after {
+          content: "68%";
+          position: absolute;
+          right: 2px;
+          top: -25px;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
