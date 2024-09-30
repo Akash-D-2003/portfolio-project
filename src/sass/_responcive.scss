@@ -55,6 +55,9 @@
 }
 @media screen and (max-width: 600px) {
   header {
+    h2 {
+      font-size: 18px !important;
+    }
   }
   .home-section {
     p {
