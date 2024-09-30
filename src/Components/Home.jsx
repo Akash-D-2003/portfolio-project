@@ -19,7 +19,7 @@ function Home() {
             </p>
           </div>
           <div className="col-lg-6 men-img">
-            <a href="../../public/fonts/Akash d-resume.pdf.pdf" download className="cv-box">
+            <a href="../../public/fonts/Akash-d-resume.pdf" download className="cv-box">
               <div className="dwonload-box">
                 <div className="img">
                   <img src={dIcon} alt="icon" />
