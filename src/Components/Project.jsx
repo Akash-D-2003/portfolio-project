@@ -31,7 +31,7 @@ function Project() {
       name: "4. Viveriti Project",
       image: project4,
       classAdd: "project4",
-      links: ["HTML", "CSS", "JavaScript", "React"],
+      links: ["HTML", "CSS", "JavaScript", "Responsive", "```Animation```"],
       link: "https://akash-d-2003.github.io/vivriti_website/",
     },
   ];
