@@ -4,7 +4,7 @@
   &::before {
     content: "";
     position: absolute;
-    background-image: url(../../src/images/project-shadow1.png);
+    background-image: url("../src/images/project-shadow1.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -17,7 +17,7 @@
   &::after {
     content: "";
     position: absolute;
-    background-image: url(../../src/images/project-shadow.png);
+    background-image: url("../src/images/project-shadow.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
