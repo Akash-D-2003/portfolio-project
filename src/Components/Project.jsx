@@ -3,6 +3,8 @@ import project1 from "../../src/images/project1.png";
 import project2 from "../../src/images/project2.png";
 import project3 from "../../src/images/project3.png";
 import project4 from "../../src/images/project4.png";
+import project5 from "../../src/images/project5.png";
+import project6 from "../../src/images/project6.png";
 
 function Project() {
   const projects = [
@@ -31,7 +33,21 @@ function Project() {
       name: "4. Viveriti Project",
       image: project4,
       classAdd: "project4",
-      links: ["HTML", "CSS", "JavaScript", "Responsive", "```Animation```"],
+      links: ["HTML", "CSS", "JavaScript", "Responsive", "Animation"],
+      link: "https://akash-d-2003.github.io/vivriti_website/",
+    },
+    {
+      name: "5. Landing Page",
+      image: project5,
+      classAdd: "project5",
+      links: ["HTML", "CSS", "JavaScript", "JQuery", "Bootstrap", "SASS"],
+      link: "https://akash-d-2003.github.io/vivriti_website/",
+    },
+    {
+      name: "6. React Food Website ",
+      image: project6,
+      classAdd: "project2",
+      links: ["React js", "Tailwind css"],
       link: "https://akash-d-2003.github.io/vivriti_website/",
     },
   ];

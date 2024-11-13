@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import skillArrow from "../../src/images/skill-arrow.png";
 import { FaHtml5, FaCss3Alt, FaJs, FaSass, FaBootstrap, FaReact } from "react-icons/fa";
 import { SiJquery } from "react-icons/si";
+import { RiTailwindCssFill } from "react-icons/ri";
 
 function Skill() {
   const skills = [
@@ -12,6 +13,11 @@ function Skill() {
     { name: "Bootstrap", icon: <FaBootstrap style={{ color: "#563d7c" }} />, lineClass: "boot" },
     { name: "jQuery", icon: <SiJquery style={{ color: "#0769ad" }} />, lineClass: "jq" },
     { name: "React", icon: <FaReact style={{ color: "#61dbfb" }} />, lineClass: "react" },
+    {
+      name: "Tailwind css",
+      icon: <RiTailwindCssFill style={{ color: "#61dbfb" }} />,
+      lineClass: "tailwind",
+    },
   ];
 
   const [scroll, setScrolled] = useState(false);
