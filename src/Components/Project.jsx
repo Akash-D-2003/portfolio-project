@@ -41,7 +41,7 @@ function Project() {
       image: project5,
       classAdd: "project5",
       links: ["HTML", "CSS", "JavaScript", "JQuery", "Bootstrap", "SASS"],
-      link: "https://akash-d-2003.github.io/vivriti_website/",
+      link: "https://akash-d-2003.github.io/landing-page/",
     },
     {
       name: "6. React Food Website ",
