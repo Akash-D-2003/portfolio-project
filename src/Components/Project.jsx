@@ -43,13 +43,13 @@ function Project() {
       links: ["HTML", "CSS", "JavaScript", "JQuery", "Bootstrap", "SASS"],
       link: "https://akash-d-2003.github.io/landing-page/",
     },
-    {
-      name: "6. React Food Website ",
-      image: project6,
-      classAdd: "project2",
-      links: ["React js", "Tailwind css"],
-      link: "https://akash-d-2003.github.io/vivriti_website/",
-    },
+    // {
+    //   name: "6. React Food Website ",
+    //   image: project6,
+    //   classAdd: "project2",
+    //   links: ["React js", "Tailwind css"],
+    //   link: "https://akash-d-2003.github.io/vivriti_website/",
+    // },
   ];
 
   return (

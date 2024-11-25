@@ -8,9 +8,10 @@
 }
 header {
   width: 100%;
-  margin-top: 10px;
   position: absolute;
-  top: 10px;
+  background-color: rgba(0, 0, 0, 0.797);
+  top: 0;
+  padding-block: 6px;
   z-index: 4;
   transform-origin: top;
   &.sticky {
@@ -21,13 +22,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: black;
+    // background-color: black;
     max-width: 1400px;
     margin: 0 auto;
-    border-radius: 50px;
     padding-inline: 40px 5px;
     padding-block: 5px;
-    border: 2px solid #185dff6e;
+    // border: 2px solid #185dff6e;
     .logo {
       display: flex;
     }

@@ -37,7 +37,7 @@ function Header() {
       <div className="header-nav">
         <div className="logo">
           <h2>Akash D</h2>
-          <ul style={{ top: menuOpen ? "20px" : "-100%" }}>
+          <ul style={{ top: menuOpen ? "0" : "-100%" }}>
             <li>
               <a href="#home">Home</a>
             </li>
