@@ -44,7 +44,7 @@ function Skill() {
   }, []);
 
   return (
-    <section className="skill-section" id="skill">
+    <div className="skill-section" id="skill">
       <div className="container">
         <h2>
           My Skills <img src={skillArrow} alt="Skill arrow" />
@@ -69,7 +69,7 @@ function Skill() {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 }
 

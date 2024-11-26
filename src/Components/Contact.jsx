@@ -37,7 +37,7 @@ const Contact = () => {
 
         <div className="row align-items-start">
           <div className="col-lg-6">
-            <h3 className="mt-5 mb-3">Let's work together!</h3>
+            <h3 className="mt-5 ms-3 mb-3">Let's work together!</h3>
             <div className="d-flex align-items-center mt-5">
               <IoIosMail className="me-4 icon" />
               <div>
@@ -56,7 +56,7 @@ const Contact = () => {
               <FaAddressBook className="icon me-4" />
               <div>
                 <h4 className="mb-2">Address</h4>
-                <p>pullaviduthy, pudukkottai, tamilnadu</p>{" "}
+                <p>Alangudi, Pudukkottai, Tamilnadu</p>{" "}
               </div>
             </div>
           </div>

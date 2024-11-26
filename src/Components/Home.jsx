@@ -3,10 +3,11 @@ import menImage from "../../src/images/men-image.png";
 import ringImage from "../../src/images/image-ring.png";
 import dIcon from "../../src/images/dwonload-icon.png";
 import resume from "../../public/fonts/Akash-d-resume.pdf";
+import { FaLinkedinIn, FaGithub, FaWhatsapp, FaInstagram, FaPhone } from "react-icons/fa6";
 
 function Home() {
   return (
-    <section className="home-section" id="home">
+    <div className="home-section position-relative" id="home">
       <div className="container">
         <div className="row">
           <div className="col-lg-6 align-content-center">
@@ -39,7 +40,30 @@ function Home() {
           </div>
         </div>
       </div>
-    </section>
+      <div className="social-media position-absolute">
+        <div className="d-flex flex-column gap-5">
+          <a href="tel:9361880362">
+            <FaPhone className="img" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/akash-d-2b0029276/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedinIn className="img" />
+          </a>
+          <a href="https://github.com/Akash-D-2003" target="_blank" rel="noopener noreferrer">
+            <FaGithub className="img" />
+          </a>
+          <a href="  https://wa.me/9361880362" target="_blank" rel="noopener noreferrer">
+            <FaWhatsapp className="img" />
+          </a>
+          <a href="#!" target="_blank" rel="noopener noreferrer">
+            <FaInstagram className="img" />
+          </a>
+        </div>
+      </div>
+    </div>
   );
 }
 

@@ -63,7 +63,6 @@
       background-size: 100%;
       background-clip: text;
       -webkit-text-fill-color: transparent;
-      color: #f8b000;
       font-size: 30px;
       line-height: 40px;
       font-weight: 600;
@@ -79,6 +78,9 @@
         border-radius: 20px;
         border: 2px solid #524e4e;
         padding: 5px 12px;
+        &:hover {
+          box-shadow: 0 0 20px #00e9f8;
+        }
       }
     }
     .btn {
@@ -91,6 +93,7 @@
       font-weight: 800;
       padding: 10px 20px;
       width: max-content;
+      transition: all 0.9s;
     }
   }
 }

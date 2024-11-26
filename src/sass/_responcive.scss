@@ -47,6 +47,11 @@
     p {
       width: 75%;
     }
+    .social-media {
+      .img {
+        color: #ffff !important;
+      }
+    }
   }
   .project-section {
     .p-box {
@@ -73,6 +78,9 @@
       width: 60px;
       bottom: 107px !important;
       right: 27px !important;
+    }
+    .social-media {
+      display: none;
     }
   }
 }

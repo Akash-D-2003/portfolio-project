@@ -53,7 +53,7 @@ function Project() {
   ];
 
   return (
-    <section className="project-section" id="project">
+    <div className="project-section" id="project">
       <div className="container">
         <div className="row justify-content-center align-items-center">
           <div className="col-lg-6">
@@ -100,7 +100,7 @@ function Project() {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 }
 
