@@ -4,13 +4,14 @@ import { AiOutlineMenu } from "react-icons/ai";
 import { MdOutlineClose } from "react-icons/md";
 
 function Header() {
+  const header = document.querySelector("header");
   const [isSticky, setIsSticky] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
   function handleDarkTheme() {
     document.querySelector("body").classList.toggle("darktheme");
     document.querySelector(".home-section").classList.toggle("light-theme");
-    document.querySelector(".header-nav").classList.toggle("theme-nav");
+    header.classList.toggle("theme-header");
   }
 
   useEffect(() => {
@@ -33,7 +34,7 @@ function Header() {
   };
 
   return (
-    <header className={isSticky ? "sticky" : ""}>
+    <header id={isSticky ? "sticky" : ""}>
       <div className="header-nav">
         <div className="logo">
           <h2>Akash D</h2>

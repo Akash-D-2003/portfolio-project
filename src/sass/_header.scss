@@ -14,7 +14,7 @@ header {
   padding-block: 6px;
   z-index: 4;
   transform-origin: top;
-  &.sticky {
+  &#sticky {
     position: fixed;
     animation: smothSticky 0.3s linear;
   }
@@ -100,7 +100,7 @@ header {
       color: #fff;
     }
   }
-  .theme-nav {
-    background-color: rgb(235, 218, 238);
-  }
+}
+.theme-header {
+  background-color: #b9a4bbd9;
 }

@@ -12,44 +12,44 @@ function Project() {
       name: "1. Food Website Landing Page",
       image: project1,
       classAdd: "project1",
-      links: ["HTML", "CSS", "JavaScript"],
+      skills: ["HTML", "CSS", "JavaScript"],
       link: "https://akash-d-2003.github.io/omni_food/",
     },
     {
       name: "2. Unislink Home Page",
       image: project2,
       classAdd: "project2",
-      links: ["HTML", "CSS", "JavaScript", "SASS"],
+      skills: ["HTML", "CSS", "JavaScript", "SASS"],
       link: "https://akash-d-2003.github.io/unislink/",
     },
     {
       name: "3. Plus Project",
       image: project3,
       classAdd: "project3",
-      links: ["HTML", "CSS", "JavaScript", "Slick Slider"],
+      skills: ["HTML", "CSS", "JavaScript", "Slick Slider"],
       link: "https://akash-d-2003.github.io/plus_project/",
     },
     {
       name: "4. Viveriti Project",
       image: project4,
       classAdd: "project4",
-      links: ["HTML", "CSS", "JavaScript", "Responsive", "Animation"],
+      skills: ["HTML", "CSS", "JavaScript", "Responsive", "Animation"],
       link: "https://akash-d-2003.github.io/vivriti_website/",
     },
     {
       name: "5. Landing Page",
       image: project5,
       classAdd: "project5",
-      links: ["HTML", "CSS", "JavaScript", "JQuery", "Bootstrap", "SASS"],
+      skills: ["HTML", "CSS", "JavaScript", "JQuery", "Bootstrap", "SASS"],
       link: "https://akash-d-2003.github.io/landing-page/",
     },
-    // {
-    //   name: "6. React Food Website ",
-    //   image: project6,
-    //   classAdd: "project2",
-    //   links: ["React js", "Tailwind css"],
-    //   link: "https://akash-d-2003.github.io/vivriti_website/",
-    // },
+    {
+      name: "6. React Food Website ",
+      image: project6,
+      classAdd: "project2",
+      skills: ["React js", "Tailwind css"],
+      link: "https://akash-d-2003.github.io/tomato_food/",
+    },
   ];
 
   return (
@@ -72,15 +72,17 @@ function Project() {
                 className={`row justify-content-between align-items-center mb-10 p-box ${project.classAdd}`}
               >
                 <div className="col-lg-6">
-                  <img src={project.image} alt={project.name} />
+                  <a href={project.link} target="_blank" rel="noopener noreferrer">
+                    <img src={project.image} alt={project.name} />
+                  </a>
                 </div>
                 <div className="col-lg-5">
                   <h3>{project.name}</h3>
                   <p className="mt-4">Technologies Used:</p>
                   <ul className="d-flex flex-wrap mt-3">
-                    {project.links.map((value, index) => (
+                    {project.skills.map((skill, index) => (
                       <li key={index} className="me-2">
-                        {value}
+                        {skill}
                       </li>
                     ))}
                   </ul>
