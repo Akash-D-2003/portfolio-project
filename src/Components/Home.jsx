@@ -58,7 +58,7 @@ function Home() {
           <a href="  https://wa.me/9361880362" target="_blank" rel="noopener noreferrer">
             <FaWhatsapp className="img" />
           </a>
-          <a href="#!" target="_blank" rel="noopener noreferrer">
+          <a href="!#">
             <FaInstagram className="img" />
           </a>
         </div>
