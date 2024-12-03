@@ -42,7 +42,7 @@ const Contact = () => {
               <IoIosMail className="me-4 icon" />
               <div>
                 <h4 className="mb-2">Email</h4>
-                <a href="mailto:akashking8589@gmail.com">akashking8589@gmail.com</a>
+                <a href="mailto:akashtharmaraj@gmail.com">akashtharmaraj@gmail.com</a>
               </div>
             </div>
             <div className="d-flex align-items-center mt-5">
