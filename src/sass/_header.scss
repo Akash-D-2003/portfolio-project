@@ -14,6 +14,7 @@ header {
   padding-block: 6px;
   z-index: 4;
   transform-origin: top;
+  box-shadow: 0 8px 18px #ffffff2a;
   &#sticky {
     position: fixed;
     animation: smothSticky 0.3s linear;
