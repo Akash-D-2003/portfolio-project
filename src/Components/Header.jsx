@@ -12,7 +12,6 @@ function Header() {
   function handleDarkTheme() {
     document.querySelector("body").classList.toggle("darktheme");
     document.querySelector(".home-section").classList.toggle("light-theme");
-    header.classList.toggle("theme-header");
   }
 
   useEffect(() => {

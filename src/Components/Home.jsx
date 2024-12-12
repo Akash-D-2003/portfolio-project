@@ -17,11 +17,11 @@ function Home() {
                 Front-End <span>Developer</span>
               </h3>
               <p className="mt-5">
-                Aspiring Front-End developer eager to kickstart a career in creating engaging and
-                user friendly web interfaces. Equipped with a solid understanding of front-end
-                technologies and a passion for pixel-perfect design. Seeking an opportunity to apply
-                academic knowledge and gain hands-on experience in a professional environment where
-                creativity and innovation are valued.
+                Aspiring <span> Front-End developer</span> eager to kickstart a career in creating
+                engaging and user friendly web interfaces. Equipped with a solid understanding of
+                front-end technologies and a passion for <span> pixel-perfect design. </span>
+                Seeking an opportunity to apply academic knowledge and gain hands-on experience in a
+                professional environment where creativity and innovation are valued.
               </p>
             </div>
             <div className="col-lg-6 men-img">

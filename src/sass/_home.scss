@@ -10,18 +10,28 @@
   h2 {
     font-family: "poppins-light";
     font-size: 30px;
+    color: #fff;
   }
   h3 {
     font-family: "prosto";
     font-size: 60px;
     line-height: 70px;
     font-weight: 700;
+    color: #fff;
     span {
       margin-left: 90px;
     }
   }
   p {
-    width: 80%;
+    width: 90%;
+    color: #ffffff96;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    span {
+      color: #fff;
+      font-weight: 500;
+    }
   }
   .men-img {
     position: relative;
@@ -57,6 +67,7 @@
           z-index: 3;
           font-size: 18px;
           font-weight: 400;
+          color: #fff;
         }
         span {
           width: 60px;
@@ -115,9 +126,6 @@
     }
   }
 }
-.light-theme {
-  background-image: url("../src/images/home-light-bg.png");
-}
 @keyframes snowfall {
   from {
     transform: translateY(0);
@@ -137,14 +145,9 @@
   bottom: 0;
   background: radial-gradient(8px 8px at 100px 50px, #fff, transparent),
     radial-gradient(6px 6px at 200px 150px, #fff, transparent),
-    // radial-gradient(3px 3px at 300px 250px, #fff, transparent),
-    // radial-gradient(4px 4px at 400px 350px, #fff, transparent),
-    // radial-gradient(6px 6px at 500px 100px, #fff, transparent),
-    // radial-gradient(3px 3px at 50px 200px, #fff, transparent),
-    // radial-gradient(4px 4px at 150px 300px, #fff, transparent),
-    // radial-gradient(6px 6px at 250px 400px, #fff, transparent),
     radial-gradient(3px 3px at 350px 500px, #fff, transparent);
-  z-index: 999;
+
+  z-index: 1;
   background-size: 650px 650px;
   animation: snowfall 8s linear infinite;
 }
