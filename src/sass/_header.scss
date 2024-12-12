@@ -19,6 +19,9 @@ header {
     position: fixed;
     animation: smothSticky 0.3s linear;
   }
+  .logo {
+    width: 8rem;
+  }
   .header-nav {
     display: flex;
     justify-content: space-between;

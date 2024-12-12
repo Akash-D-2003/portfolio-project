@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { IoSunnySharp } from "react-icons/io5";
 import { AiOutlineMenu } from "react-icons/ai";
 import { MdOutlineClose } from "react-icons/md";
+import logo from "../images/logo.png";
 
 function Header() {
   const header = document.querySelector("header");
@@ -37,7 +38,9 @@ function Header() {
     <header id={isSticky ? "sticky" : ""}>
       <div className="header-nav">
         <div className="logo">
-          <h2>Akash D</h2>
+          <h2>
+            <img className="logo" src={logo} alt="logo" />
+          </h2>
           <ul style={{ top: menuOpen ? "0" : "-100%" }}>
             <li>
               <a href="#home">Home</a>
