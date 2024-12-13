@@ -120,6 +120,7 @@
   .social-media {
     bottom: 60px;
     right: 30px;
+    z-index: 2;
     .img {
       font-size: 24px;
       color: black;
@@ -144,6 +145,9 @@
   right: 0;
   bottom: 0;
   background: radial-gradient(8px 8px at 100px 50px, #fff, transparent),
+    radial-gradient(6px 6px at 200px 150px, #fff, transparent),
+    radial-gradient(3px 3px at 350px 500px, #fff, transparent),
+    radial-gradient(8px 8px at 100px 50px, #fff, transparent),
     radial-gradient(6px 6px at 200px 150px, #fff, transparent),
     radial-gradient(3px 3px at 350px 500px, #fff, transparent);
 
