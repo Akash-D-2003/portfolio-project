@@ -12,14 +12,14 @@ function Project() {
       name: "1. Food Website Landing Page",
       image: project1,
       classAdd: "project1",
-      skills: ["HTML", "CSS", "JavaScript"],
+      skills: ["HTML", "CSS", "SASS", "JavaScript"],
       link: "https://akash-d-2003.github.io/omni_food/",
     },
     {
       name: "2. Unislink Home Page",
       image: project2,
       classAdd: "project2",
-      skills: ["HTML", "CSS", "JavaScript", "SASS"],
+      skills: ["HTML", "CSS", "JavaScript"],
       link: "https://akash-d-2003.github.io/unislink/",
     },
     {
