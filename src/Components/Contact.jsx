@@ -35,7 +35,7 @@ const Contact = () => {
       <div className="container">
         <h2 className="text-center">Contact Me</h2>
 
-        <div className="row align-items-start">
+        <div className="row align-items-start position-relative z-2">
           <div className="col-lg-6">
             <h3 className="mt-5 ms-3 mb-3">Let's work together!</h3>
             <div className="d-flex align-items-center mt-5">

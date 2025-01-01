@@ -92,16 +92,16 @@
       bottom: 344px;
       right: 19px;
     }
-    &::before {
-      content: "";
-      background-image: url("../src/images/big-close.png");
-      position: absolute;
-      background-repeat: no-repeat;
-      width: 100px;
-      height: 100px;
-      top: 150px;
-      left: 0px;
-    }
+    // &::before {
+    //   content: "";
+    //   background-image: url("../src/images/big-close.png");
+    //   position: absolute;
+    //   background-repeat: no-repeat;
+    //   width: 100px;
+    //   height: 100px;
+    //   top: 150px;
+    //   left: 0px;
+    // }
     .ring-img {
       position: absolute;
       bottom: 210px;

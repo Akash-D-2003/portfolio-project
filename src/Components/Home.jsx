@@ -65,7 +65,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="snow"></div>
+      {/* <div className="snow"></div> */}
     </>
   );
 }

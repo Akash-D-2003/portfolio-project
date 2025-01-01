@@ -21,11 +21,14 @@
     line-height: 70px;
     font-weight: 700;
     color: #fff;
+    position: relative;
+    z-index: 2;
   }
   h3 {
     font-size: 40px;
     font-family: "prosto";
     position: relative;
+    z-index: 1 !important;
     &::before {
       content: "";
       position: absolute;

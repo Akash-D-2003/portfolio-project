@@ -37,27 +37,26 @@ function Header() {
     <header id={isSticky ? "sticky" : ""}>
       <div className="header-nav">
         <div className="logo">
-          <h2>
-            <img className="logo" src={logo} alt="logo" />
-          </h2>
-          <ul style={{ top: menuOpen ? "0" : "-100%" }}>
-            <li>
-              <a href="#home">Home</a>
-            </li>
-            <li>
-              <a href="#skill">Skill</a>
-            </li>
-            <li>
-              <a href="#project">Project</a>
-            </li>
-            <li>
-              <a href="#contact">Contact</a>
-            </li>
-            <div className="close-menu" onClick={toggleMenu}>
-              <MdOutlineClose />
-            </div>
-          </ul>
+          <img className="logo" src={logo} alt="logo" />
         </div>
+        <ul style={{ top: menuOpen ? "0" : "-100%" }}>
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#skill">Skill</a>
+          </li>
+          <li>
+            <a href="#project">Project</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+          <div className="close-menu" onClick={toggleMenu}>
+            <MdOutlineClose />
+          </div>
+        </ul>
+
         <div className="d-flex align-items-center">
           <div className="me-5 d-flex align-items-center">
             <input type="checkbox" className="checkbox" id="checkbox" />

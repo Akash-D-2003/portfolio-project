@@ -48,7 +48,7 @@ function Project() {
       image: project6,
       classAdd: "project2",
       skills: ["React js", "Tailwind css"],
-      link: "https://akash-d-2003.github.io/tomato_food/",
+      link: "https://tomto.netlify.app/",
     },
   ];
 
