@@ -1,14 +1,14 @@
-@keyframes topmove {
-  0% {
-    transform: translateY(-50%);
-  }
-  50% {
-    transform: translateY(50%);
-  }
-  100% {
-    transform: translateY(-50%);
-  }
-}
+// @keyframes topmove {
+//   0% {
+//     transform: translateY(-50%);
+//   }
+//   50% {
+//     transform: translateY(50%);
+//   }
+//   100% {
+//     transform: translateY(-50%);
+//   }
+// }
 .skill-section {
   padding-block: 100px;
 
@@ -24,7 +24,6 @@
     position: absolute;
     left: 0;
     z-index: -1;
-    animation: topmove 12s infinite linear;
   }
   &::after {
     content: "";
@@ -33,20 +32,19 @@
     height: 800px;
     background-repeat: no-repeat;
     filter: hue-rotate(300deg);
-
     position: absolute;
     top: -200px;
     right: 0;
     z-index: -1;
-    animation: topmove 9s infinite linear forwards;
   }
   h2 {
-    font-family: "prosto";
+    font-family: "Passion One", serif;
     font-size: 60px;
     line-height: 70px;
-    font-weight: 700;
+    font-weight: 400;
     img {
-      width: 180px;
+      width: 80px;
+      rotate: (-90deg);
       margin-left: 20px;
     }
   }

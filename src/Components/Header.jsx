@@ -9,11 +9,6 @@ function Header() {
   const [isSticky, setIsSticky] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
-  function handleDarkTheme() {
-    document.querySelector("body").classList.toggle("darktheme");
-    document.querySelector(".home-section").classList.toggle("light-theme");
-  }
-
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 200) {
@@ -58,15 +53,6 @@ function Header() {
         </ul>
 
         <div className="d-flex align-items-center">
-          <div className="me-5 d-flex align-items-center">
-            <input type="checkbox" className="checkbox" id="checkbox" />
-            <label htmlFor="checkbox" onClick={handleDarkTheme} className="checkbox-label">
-              <i className="fas fa-moon"></i>
-              <i className="fas fa-sun"></i>
-              <span className="ball"></span>
-            </label>
-            <IoSunnySharp className="dark ms-2" />
-          </div>
           <div onClick={toggleMenu}>
             <AiOutlineMenu className="header-menu" />
           </div>

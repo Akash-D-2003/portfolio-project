@@ -57,7 +57,11 @@ function Project() {
       <div className="container">
         <div className="row justify-content-center align-items-center">
           <div className="col-lg-6">
-            <h2 className="text-center">My Projects</h2>
+            <div className="text-center position-relative">
+              <h2>My Projects</h2>
+              <h3 className=" position-absolute project-text">Projects</h3>
+            </div>
+
             <p className="mt-4 p-heading text-center">
               I've utilized front-end technologies across multiple projects to craft dynamic and
               visually captivating web applications.

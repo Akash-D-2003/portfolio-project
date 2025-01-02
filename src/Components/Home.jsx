@@ -1,6 +1,5 @@
 import React from "react";
-import menImage from "../../src/images/men-image.png";
-import ringImage from "../../src/images/image-ring.png";
+
 import dIcon from "../../src/images/dwonload-icon.png";
 import resume from "../../public/fonts/Akash-d-resume.pdf";
 import { FaLinkedinIn, FaGithub, FaWhatsapp, FaInstagram, FaPhone } from "react-icons/fa6";
@@ -36,8 +35,6 @@ function Home() {
                   <span style={{ "--i": 2 }}></span>
                 </div>
               </a>
-              <img className="w-100" src={menImage} alt="men-image" />
-              <img className="ring-img" src={ringImage} alt="ring-image" />
             </div>
           </div>
         </div>

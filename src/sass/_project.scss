@@ -29,16 +29,26 @@
     z-index: -1;
   }
   h2 {
-    font-family: "prosto";
-    font-size: 60px;
+    font-family: "Passion One", serif;
+    font-size: 40px;
     line-height: 70px;
-    font-weight: 700;
+    font-weight: 400;
+  }
+  .project-text {
+    font-family: "Passion One", serif;
+    font-size: 80px;
+    color: #3f3f3f;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
   }
   .p-heading {
     font-family: "poppins-regular";
     font-size: 16px;
     line-height: 26px;
     margin-bottom: 50px;
+    font-weight: 600;
   }
   .project2 {
     flex-direction: row-reverse;
