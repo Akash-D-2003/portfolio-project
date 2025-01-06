@@ -1,5 +1,5 @@
 @media screen and (max-width: 1024px) {
-  header {
+  .header {
     h2 {
       font-size: 22px !important;
     }
@@ -10,7 +10,7 @@
       position: fixed;
       flex-direction: column;
       align-items: start !important;
-      background-color: black;
+      background-color: black !important;
       border: 1px solid rgb(92, 114, 195);
       width: 100%;
       top: -100%;
@@ -21,6 +21,7 @@
       border-bottom-left-radius: 30px;
       z-index: 4;
       transition: all 0.5s;
+
       li {
         padding-block: 20px;
         a {
@@ -35,15 +36,25 @@
         right: 20px;
       }
     }
+    .nav_top-0 {
+      top: 0;
+    }
+    .nav_top-100 {
+      top: -100% !important;
+    }
     .header-menu {
       display: block !important;
     }
     .btn-header {
-      display: none;
+      display: none !important;
     }
   }
   .home-section {
-    padding-top: 150px;
+    padding-top: 50px;
+
+    .home_background {
+      width: 350px;
+    }
     p {
       width: 75%;
     }
@@ -56,6 +67,11 @@
   .project-section {
     .p-box {
       gap: 40px;
+    }
+    .project3 {
+      img {
+        width: 100%;
+      }
     }
   }
 }

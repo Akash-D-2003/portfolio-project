@@ -1,21 +1,29 @@
 import React from "react";
-
-import dIcon from "../../src/images/dwonload-icon.png";
-import resume from "../../public/fonts/Akash-d-resume.pdf";
-import { FaLinkedinIn, FaGithub, FaWhatsapp, FaInstagram, FaPhone } from "react-icons/fa6";
+import home_bg from "../../images/home-hero.png";
+import home_shadow from "../../images/home_shadow.png";
+import download from "../../images/download.png";
+import emailicon from "../../images/email.png";
+import resume from "../../../public/fonts/Akash-d-resume.pdf";
+import { FaLinkedinIn, FaGithub, FaWhatsapp, FaInstagram, FaPhone, FaRoad } from "react-icons/fa6";
 
 function Home() {
   return (
     <>
       <div className="home-section position-relative" id="home">
+        <div className="home_background">
+          <img src={home_bg} alt="" />
+        </div>
+        <div className="home_shadow">
+          <img src={home_shadow} alt="" />
+        </div>
         <div className="container">
           <div className="row">
-            <div className="col-lg-6 align-content-center">
+            <div className="col-lg-12 text-center align-content-center">
               <h2>I am Akash D</h2>
               <h3 className="mt-4">
-                Front-End <span>Developer</span>
+                Front-<span className="strok">End</span> Developer
               </h3>
-              <p className="mt-5">
+              <p className="mt-5 m-auto">
                 Aspiring <span> Front-End developer</span> eager to kickstart a career in creating
                 engaging and user friendly web interfaces. Equipped with a solid understanding of
                 front-end technologies and a passion for <span> pixel-perfect design. </span>
@@ -23,8 +31,28 @@ function Home() {
                 professional environment where creativity and innovation are valued.
               </p>
             </div>
-            <div className="col-lg-6 men-img">
-              <a href={resume} download className="cv-box">
+            <div className="mt-5 d-flex justify-content-center gap-5">
+              <div>
+                <a
+                  href={resume}
+                  download
+                  className="btn-header d-flex gap-3 align-items-center bg-white text-black"
+                >
+                  Download Resume
+                  <img src={download} alt="download icon" />
+                </a>
+              </div>
+              <div>
+                <a
+                  href="mailto:akashtharmaraj@gmail.com"
+                  className="btn-header d-flex gap-3 align-items-center"
+                >
+                  Contact Email
+                  <img src={emailicon} alt="email icon" />
+                </a>
+              </div>
+            </div>
+            {/* <a href={resume} download className="cv-box">
                 <div className="dwonload-box">
                   <div className="img">
                     <img src={dIcon} alt="icon" />
@@ -34,8 +62,7 @@ function Home() {
                   <span style={{ "--i": 1 }}></span>
                   <span style={{ "--i": 2 }}></span>
                 </div>
-              </a>
-            </div>
+              </a> */}
           </div>
         </div>
         <div className="social-media position-absolute">

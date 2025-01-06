@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { IoIosMail } from "react-icons/io";
 import { FaPhoneAlt, FaAddressBook } from "react-icons/fa";
+import contact_bg from "../../images/contact-bg-img1.png";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -31,7 +32,10 @@ const Contact = () => {
   };
 
   return (
-    <footer className="contact-section" id="contact">
+    <div className="contact-section" id="contact">
+      <div className="contact_bg">
+        <img src={contact_bg} alt="" />
+      </div>
       <div className="container">
         <h2 className="text-center">Contact Me</h2>
 
@@ -123,7 +127,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </footer>
+    </div>
   );
 };
 

@@ -36,16 +36,16 @@ a {
 }
 .btn-header {
   font-size: 14px;
-  font-weight: 600;
-  padding: 18px 40px;
+  font-weight: 400;
+  padding: 6px 6px 6px 16px;
   border-radius: 50px;
   border: none;
-  background-color: #9d64cf7e;
+  background-color: #ffffff41;
   color: #ffff;
 }
-@import "./sass/header";
-@import "./sass/home";
-@import "./sass/skill";
-@import "./sass/project";
-@import "./sass/contact";
+@import "./Components/Header/header";
+@import "./Components/Home/home";
+@import "./Components/Skill/skill";
+@import "./Components/Project/project";
+@import "./Components/Contact/contact";
 @import "./sass/responcive";

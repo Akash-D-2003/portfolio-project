@@ -1,11 +1,11 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.scss";
-import Header from "./Components/Header";
-import Home from "./Components/Home";
-import Skill from "./Components/Skill";
-import Project from "./Components/Project";
-import Contact from "./Components/Contact";
+import Header from "./Components/Header/Header";
+import Home from "./Components/Home/Home";
+import Skill from "./Components/Skill/Skill";
+import Project from "./Components/Project/Project";
+import Contact from "./Components/Contact/Contact";
 
 const App = () => {
   return (

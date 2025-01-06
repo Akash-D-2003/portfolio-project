@@ -1,59 +1,56 @@
 @keyframes smothSticky {
   0% {
-    opacity: 0;
+    top: -30px;
   }
   100% {
-    opacity: 1;
+    top: 10px;
   }
 }
-header {
+.header {
   width: 100%;
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.797);
-  top: 0;
-  padding-block: 6px;
-  z-index: 3;
-  transform-origin: top;
-  box-shadow: 0 8px 18px #ffffff2a;
-  &#sticky {
-    position: fixed;
-    animation: smothSticky 0.3s linear;
-  }
+  margin-top: 10px;
   .logo {
-    width: 8rem;
+    width: 10rem;
   }
   .header-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // background-color: black;
     max-width: 1400px;
     margin: 0 auto;
     padding-inline: 40px 5px;
     padding-block: 5px;
-    // border: 2px solid #185dff6e;
     .logo {
       display: flex;
-    }
-    h2 {
-      margin-right: 60px;
-      font-size: 24px;
-      font-family: "prosto";
-      font-weight: 700;
     }
     ul {
       display: flex;
       align-items: center;
+      background-color: #584526;
+      padding-block: 10px;
+      padding-inline: 30px;
+      border-radius: 20px;
+      &#sticky {
+        width: max-content;
+        background: #000;
+        border: 2px solid #2e2c2c;
+        position: fixed;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 5;
+      }
       li {
-        padding-inline: 50px;
+        padding-inline: 20px;
 
         a {
+          font-family: "poppins-light";
           font-size: 16px;
           line-height: 26px;
           color: #fff;
           transition: all 0.3s;
           &:hover {
-            color: yellow;
+            color: orange;
             transition: all 0.3s;
           }
         }

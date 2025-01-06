@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import skillArrow from "../../src/images/skill-arrow.png";
+import skillArrow from "../../images/skill-arrow.png";
 import { FaHtml5, FaCss3Alt, FaJs, FaSass, FaBootstrap, FaReact } from "react-icons/fa";
 import { SiJquery } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
@@ -46,12 +46,10 @@ function Skill() {
   return (
     <div className="skill-section" id="skill">
       <div className="container">
-        <h2>
-          My Skills <img src={skillArrow} alt="Skill arrow" />
-        </h2>
+        <h2>My Skills</h2>
         <div className="row justify-content-center">
           <div className="col-lg-10">
-            <div className="skill-box mt-5 row justify-content-between" ref={sectionRef}>
+            <div className="skill-box mt-2 row justify-content-between" ref={sectionRef}>
               {skills.map((skill, index) => (
                 <div key={index} className="skills mt-5 col-lg-5">
                   <div className="bar d-flex flex-column">
