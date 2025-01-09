@@ -37,8 +37,10 @@ const Contact = () => {
         <img src={contact_bg} alt="" />
       </div>
       <div className="container">
-        <h2 className="text-center">Contact Me</h2>
-
+        <div className="text-center position-relative">
+          <h2>Contact Me</h2>
+          <h5 className=" position-absolute contact-text">Contact</h5>
+        </div>
         <div className="row align-items-start position-relative z-2">
           <div className="col-lg-6">
             <h3 className="mt-5 ms-3 mb-3">Let's work together!</h3>

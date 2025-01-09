@@ -23,36 +23,43 @@
     .logo {
       display: flex;
     }
+
     ul {
       display: flex;
       align-items: center;
-      background-color: #584526;
       padding-block: 10px;
       padding-inline: 30px;
       border-radius: 20px;
       &#sticky {
         width: max-content;
-        background: #000;
-        border: 2px solid #2e2c2c;
+        background: #28272763;
+        backdrop-filter: blur(4px);
         position: fixed;
         top: 10px;
         left: 50%;
         transform: translateX(-50%);
         z-index: 5;
+        animation: smothSticky 0.2s linear;
       }
       li {
         padding-inline: 20px;
 
         a {
-          font-family: "poppins-light";
+          font-family: sans-serif;
           font-size: 16px;
-          line-height: 26px;
+          font-weight: 500;
           color: #fff;
           transition: all 0.3s;
+          padding: 8px 15px;
+          border-radius: 20px;
           &:hover {
-            color: orange;
+            box-shadow: 0 0 10px #f8b000 inset;
             transition: all 0.3s;
           }
+        }
+        .scroll_point {
+          box-shadow: 0 0 10px #f8b000 inset;
+          transition: all 0.3s;
         }
       }
       .close-menu {
@@ -60,6 +67,15 @@
         font-size: 36px;
         color: #f8b000;
       }
+    }
+    .btn-header {
+      font-size: 14px;
+      font-weight: 400;
+      padding: 6px 6px 6px 16px;
+      border-radius: 50px;
+      border: none;
+      box-shadow: 0px 0px 20px rgb(97, 95, 95) inset;
+      color: #ffff;
     }
     .header-menu {
       display: none;

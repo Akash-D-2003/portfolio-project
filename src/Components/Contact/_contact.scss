@@ -17,12 +17,20 @@
 
   h2 {
     font-family: "Passion One", serif;
-    font-size: 60px;
-    line-height: 70px;
-    font-weight: 400;
-    color: #fff;
     position: relative;
     z-index: 2;
+    font-size: 40px;
+    line-height: 70px;
+    font-weight: 400;
+  }
+  .contact-text {
+    font-family: "Passion One", serif;
+    font-size: 80px;
+    color: #3f3f3f;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
   }
   h3 {
     font-size: 40px;
