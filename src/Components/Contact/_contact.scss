@@ -53,6 +53,15 @@
   .icon {
     font-size: 32px;
   }
+  .success-message {
+    margin-top: 200px;
+    p {
+      color: #fff;
+      font-weight: 600;
+      font-size: 30px;
+      text-align: center;
+    }
+  }
   a {
     color: #8b8686;
     position: relative;
@@ -76,6 +85,13 @@
     &:focus {
       background-color: inherit;
       color: #fff;
+      border-color: #0f52d953;
+      box-shadow: 0 0 20px #0f52d98c inset;
+    }
+    &:-webkit-autofill {
+      background-color: transparent !important; /* Makes the background transparent */
+      transition: background-color 5000s ease-in-out 0s; /* Avoids color flash */
+      -webkit-text-fill-color: #fff !important; /* Retain text color */
     }
   }
   textarea {
@@ -93,6 +109,13 @@
     &:focus {
       background-color: inherit;
       color: #fff;
+      border-color: #0f52d953;
+      box-shadow: 0 0 20px #0f52d98c inset;
+    }
+    &:-webkit-autofill {
+      background-color: transparent !important; /* Makes the background transparent */
+      transition: background-color 5000s ease-in-out 0s; /* Avoids color flash */
+      -webkit-text-fill-color: #fff !important; /* Retain text color */
     }
   }
   button {

@@ -30,17 +30,6 @@
       padding-block: 10px;
       padding-inline: 30px;
       border-radius: 20px;
-      &#sticky {
-        width: max-content;
-        background: #28272763;
-        backdrop-filter: blur(4px);
-        position: fixed;
-        top: 10px;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 5;
-        animation: smothSticky 0.2s linear;
-      }
       li {
         padding-inline: 20px;
 
@@ -53,13 +42,9 @@
           padding: 8px 15px;
           border-radius: 20px;
           &:hover {
-            box-shadow: 0 0 10px #f8b000 inset;
+            box-shadow: 0 0 10px #f5f5f5 inset;
             transition: all 0.3s;
           }
-        }
-        .scroll_point {
-          box-shadow: 0 0 10px #f8b000 inset;
-          transition: all 0.3s;
         }
       }
       .close-menu {

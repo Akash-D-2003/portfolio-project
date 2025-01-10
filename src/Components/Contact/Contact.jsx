@@ -1,15 +1,22 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { IoIosMail } from "react-icons/io";
 import { FaPhoneAlt, FaAddressBook } from "react-icons/fa";
 import contact_bg from "../../images/contact-bg-img1.png";
+import emailjs from "emailjs-com";
 
 const Contact = () => {
+  const form = useRef(null);
+  const fillError = {
+    name: { errorMessage: false },
+    email: { errorMessage: false },
+    message: { errorMessage: false },
+  };
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     message: "",
   });
-  const [error, setError] = useState("");
+  const [errors, setErrors] = useState(fillError);
   const [submitted, setSubmitted] = useState(false);
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -20,15 +27,39 @@ const Contact = () => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    const { name, email, message } = formData;
-
-    if (!name || !email || !message) {
-      setError("All fields are required.");
-      return;
+    let errors = fillError;
+    let hassError = false;
+    if (formData.name == "") {
+      errors.name.errorMessage = true;
+      hassError = true;
     }
-    setError("");
-    setSubmitted(true);
-    console.log("Form Data:", formData);
+    if (formData.email == "") {
+      errors.email.errorMessage = true;
+      hassError = true;
+    }
+    if (formData.message == "") {
+      errors.message.errorMessage = true;
+      hassError = true;
+    }
+    setErrors({ ...errors });
+    if (!hassError) {
+      emailjs
+        .sendForm(
+          "service_6ang8mn", // Replace with your service ID
+          "template_uooov4v", // Replace with your template ID
+          form.current,
+          "iEz3XBstDZMttEB0E" // Replace with your public key
+        )
+        .then(
+          (result) => {
+            console.log("Email sent successfully:", result.text);
+            setSubmitted(true);
+          },
+          (error) => {
+            console.error("Error sending email:", error.text);
+          }
+        );
+    }
   };
 
   return (
@@ -70,12 +101,12 @@ const Contact = () => {
             <div className="contact-box">
               {submitted ? (
                 <div className="success-message">
-                  <p className="mt-5 text-center h2 text-success">
-                    Thank you, {formData.name}! <br /> Your message has been sent.
+                  <p className="mt-5">
+                    Thank you, {formData.name} <br /> Your message has been sent.
                   </p>
                 </div>
               ) : (
-                <form onSubmit={handleSubmit}>
+                <form ref={form} onSubmit={handleSubmit}>
                   <div className="form-group mt-5">
                     <label htmlFor="name" className="mb-2 ps-4">
                       Name:
@@ -88,6 +119,7 @@ const Contact = () => {
                       onChange={handleChange}
                       placeholder="Enter your name"
                       className="form-control"
+                      required
                     />
                   </div>
                   <div className="form-group mt-4">
@@ -102,6 +134,7 @@ const Contact = () => {
                       onChange={handleChange}
                       placeholder="Enter your email"
                       className="form-control"
+                      required
                     />
                   </div>
                   <div className="form-group mt-4">
@@ -115,9 +148,10 @@ const Contact = () => {
                       onChange={handleChange}
                       placeholder="Write your message here"
                       className="form-control"
+                      required
                     />
                   </div>
-                  {error && <p className="error mt-4 ps-4 text-danger">{error}</p>}
+                  {/* {error && <p className="error mt-4 ps-4 text-danger">{error}</p>} */}
                   <div className="d-flex justify-content-center">
                     <button type="submit" className="btn btn-warning mt-3">
                       Submit

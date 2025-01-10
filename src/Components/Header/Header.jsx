@@ -16,10 +16,10 @@ function Header() {
       if (scrollY < 800) {
         setActiveSection("home");
         setIsSticky(false);
-      } else if (scrollY >= 800 && scrollY < 1400) {
+      } else if (scrollY >= 800 && scrollY < 1550) {
         setActiveSection("skill");
         setIsSticky(true);
-      } else if (scrollY >= 1400 && scrollY < 3800) {
+      } else if (scrollY >= 1550 && scrollY < 3800) {
         setActiveSection("project");
         setIsSticky(true);
       } else if (scrollY >= 3800) {
@@ -33,8 +33,6 @@ function Header() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  console.log("scroll", window.scrollY);
-
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
