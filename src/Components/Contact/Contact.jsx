@@ -18,6 +18,7 @@ const Contact = () => {
   });
   const [errors, setErrors] = useState(fillError);
   const [submitted, setSubmitted] = useState(false);
+  const [loader, setLoader] = useState(false);
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -42,7 +43,11 @@ const Contact = () => {
       hassError = true;
     }
     setErrors({ ...errors });
+    if (hassError) {
+      setLoader(false);
+    }
     if (!hassError) {
+      setLoader(true);
       emailjs
         .sendForm(
           "service_6ang8mn", // Replace with your service ID
@@ -54,6 +59,7 @@ const Contact = () => {
           (result) => {
             console.log("Email sent successfully:", result.text);
             setSubmitted(true);
+            setLoader(false);
           },
           (error) => {
             console.error("Error sending email:", error.text);
@@ -153,6 +159,10 @@ const Contact = () => {
                   </div>
                   {/* {error && <p className="error mt-4 ps-4 text-danger">{error}</p>} */}
                   <div className="d-flex justify-content-center">
+                    <div>
+                      {" "}
+                      <img src="" alt="" />
+                    </div>
                     <button type="submit" className="btn btn-warning mt-3">
                       Submit
                     </button>
