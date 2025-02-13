@@ -2,7 +2,7 @@ import React from "react";
 import home_bg from "../../images/home-hero.png";
 import download from "../../images/download.png";
 import emailicon from "../../images/email.png";
-import resume from "../../../public/fonts/Akash-d-resume.pdf";
+import resume from "../../../public/fonts/Akash_Front-End_Developer.pdf";
 import { FaLinkedinIn, FaGithub, FaWhatsapp, FaInstagram, FaPhone, FaRoad } from "react-icons/fa6";
 
 function Home() {
